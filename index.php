@@ -6,16 +6,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Come run with friends! MITRC meets every Monday at 5:30pm in the Z Center lobby.">
+    <meta name="keywords" content="MIT,Massachusetts Institute of Technology,running,run,jog,z center,fitness,boston,charles,esplanade,health,fun,friendly,college,miles,weekly,monday">
     <meta name="author" content="Ken Leidal <kkleidal@gmail.com>">
 
-    <title>Landing Page - Start Bootstrap Theme</title>
+    <title>MIT Running Club</title>
+
+    <!-- Favicon: -->
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
 
     <!-- Bootstrap Core CSS -->
     <link href="libs/landing-page/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
+    <!-- Template CSS -->
     <link href="libs/landing-page/css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="libs/landing-page/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -43,7 +51,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png"/>MIT Running Club</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -52,7 +60,7 @@
                         <a href="#">About</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="#">News</a>
                     </li>
                     <li>
                         <a href="#">Contact</a>
@@ -72,20 +80,16 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <h1>Landing Page</h1>
-                        <h3>A Template by Start Bootstrap</h3>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                            </li>
-                        </ul>
+                        <div class="dark-backdrop rounded slight-padding">
+                            <h1 class="title">MIT Running Club</h1>
+                            <h3 class="subtitle">Come run with friends</h3>
+                            <hr class="intro-divider">
+                            <ul class="list-inline intro-social-buttons">
+                                <li>
+                                    <a href="https://www.facebook.com/groups/615937005130415/" target="_blank" class="btn btn-primary btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

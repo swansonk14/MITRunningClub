@@ -1,0 +1,52 @@
+@font-face {
+    font-family: BebasNeueThin;
+    src: url(../fonts/BebasNeue_Thin.ttf);
+}
+@font-face {
+    font-family: BebasNeueLight;
+    src: url(../fonts/BebasNeue_Light.ttf);
+}
+@font-face {
+    font-family: BebasNeueBook;
+    src: url(../fonts/BebasNeue_Book.ttf);
+}
+@font-face {
+    font-family: BebasNeueRegular;
+    src: url(../fonts/BebasNeue_Regular.ttf);
+}
+@font-face {
+    font-family: BebasNeueBold;
+    src: url(../fonts/BebasNeue_Bold.ttf);
+}
+
+.logo {
+	height: 100%;
+	padding: 2px 8px 2px 8px;
+}
+
+.intro-header {
+	background: url(../img/charles.jpg) no-repeat center center;
+	background-size: cover;
+}
+.dark-backdrop {
+	background-color: rgba( 0, 0, 0, 0.3 );
+}
+.rounded {
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+}
+.slight-padding {
+	padding: 10px;
+}
+.title {
+	font-family: BebasNeueRegular;
+	font-size: 84px;
+	letter-spacing: 2px;
+}
+.subtitle {
+	font-family: BebasNeueBook;
+	font-size: 36px;
+	letter-spacing: 2px;
+	font-style: italic;
+}
