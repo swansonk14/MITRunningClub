@@ -227,6 +227,9 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="libs/landing-page/js/bootstrap.min.js"></script>
 
+    <!-- Handlebars Templating Engine -->
+    <script src="libs/handlebars-v1.3.0.js"></script>
+
 </body>
 
 </html>
