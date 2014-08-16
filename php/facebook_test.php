@@ -26,17 +26,17 @@ if ( isset( $_GET['p'] ) ) {
 $offset = NUMBER_PER_PAGE_RESULTS * $page;
 $request = new FacebookRequest(
     $session,
-    'GET',
-    "/" . FACEBOOK_GROUP_ID . "/feed?fields=id,from,message,picture,link,name,caption,description,type,created_time&limit=" . NUMBER_PER_PAGE_RESULTS . "&offset=$offset"
+    'GET', // ?fields=id,from,message,picture,link,name,caption,description,type,created_time
+    "/" . FACEBOOK_GROUP_ID . "/feed?limit=" . NUMBER_PER_PAGE_RESULTS . "&offset=$offset"
 );
 $response = $request->execute();
 $graphObject = $response->getGraphObject();
 /* handle the result */
 
-// var_dump( $graphObject->asArray() );
-
-// var_dump( $graphObject->asArray()['data'] );
-
+if ( count( $graphObject->getPropertyNames() ) == 0 ) {
+    echo "{\"eos\":true}";
+    die();
+}
 $posts = $graphObject->asArray()['data'];
 
 $acceptedPosts = Array();

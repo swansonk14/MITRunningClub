@@ -234,6 +234,21 @@
     <!-- Handlebars Templating Engine -->
     <script src="libs/handlebars-v1.3.0.js"></script>
 
+    <!-- Main App -->
+    <script src="js/app.js"></script>
+
+    <script id="template-post" type="text/x-handlebars-template">
+        <div class="row">
+
+        </div>
+    </script>
+
+    <script type="text/javascript">
+        $( function() {
+            app();
+        });
+    </script>
+
 </body>
 
 </html>
