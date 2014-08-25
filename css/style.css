@@ -50,3 +50,12 @@
 	letter-spacing: 2px;
 	font-style: italic;
 }
+
+.fb-photo {
+	text-align: center;
+}
+.fb-photo > img {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}

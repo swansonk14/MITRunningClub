@@ -1,3 +1,7 @@
+<?PHP
+    require( __DIR__ . "/config.php" );
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,6 +25,9 @@
 
     <!-- Template CSS -->
     <link href="libs/landing-page/css/landing-page.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="css/timeline.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
@@ -102,7 +109,108 @@
 
     <!-- Page Content -->
 
+    <!--<div class="facebook-posts">
+
+    </div>-->
+
     <div class="content-section-a">
+        <div class="container">
+             <ul class="timeline facebook-posts">
+                <!--<li>
+                  <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+                    </div>
+                    <div class="timeline-body">
+                      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline-inverted">
+                  <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                      <p>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline-inverted">
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                      <hr>
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                          <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline-inverted">
+                  <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                    </div>
+                  </div>
+                </li>-->
+            </ul>
+        </div>
+    </div>
+
+    <!--<div class="content-section-a">
 
         <div class="container">
 
@@ -119,10 +227,10 @@
             </div>
 
         </div>
-        <!-- /.container -->
+        <!- /.container ->
 
     </div>
-    <!-- /.content-section-a -->
+    <!- /.content-section-a ->
 
     <div class="content-section-b">
 
@@ -141,10 +249,10 @@
             </div>
 
         </div>
-        <!-- /.container -->
+        <!- /.container ->
 
     </div>
-    <!-- /.content-section-b -->
+    <!- /.content-section-b ->
 
     <div class="content-section-a">
 
@@ -163,10 +271,11 @@
             </div>
 
         </div>
-        <!-- /.container -->
+        <!- /.container ->
 
     </div>
-    <!-- /.content-section-a -->
+    <!- /.content-section-a ->
+    -->
 
     <div class="banner">
 
@@ -238,14 +347,79 @@
     <script src="js/app.js"></script>
 
     <script id="template-post" type="text/x-handlebars-template">
-        <div class="row">
+    {{#each this}}
 
+    <li class="{{alternate '' 'timeline-inverted'}}">
+      <a href="{{ifNotThen link 'https://www.facebook.com/groups/<?php echo FACEBOOK_GROUP_ID; ?>'}}" target="_blank">
+        <div class="timeline-badge {{badgeColor type}}"><i class="glyphicon {{badgeIcon type}}"></i></div>
+      </a>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+            <a href="{{ifNotThen link 'https://www.facebook.com/groups/<?php echo FACEBOOK_GROUP_ID; ?>'}}" target="_blank">
+                <h4 class="timeline-title"><i class="glyphicon glyphicon-time"></i> {{date created_time}}</h4>
+                <p><small class="text-muted">{{from.name}}</small></p>
+            </a>
         </div>
+        <div class="timeline-body">
+          {{#ifEq type 'photo'}}
+            <div class="fb-photo"><img src="{{picture}}"/></div>
+          {{else}}
+            <p>{{{renderBody message}}}</p>
+          {{/ifEq}}
+        </div>
+      </div>
+    </li>
+
+    <!--<div class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    {{{json this}}}
+                    <h2 class="section-heading">{{this.created_time}}</h2>
+                    <h3 class="section-subheading">{{this.from.name}}</h3>
+                    <p class="lead">{{this.message}}</p>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    {{/each}}
+    </script>
+
+    <script id="template-fb-load-error" type="text/x-handlebars-template">
+    <li>
+      <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Error</h4>
+          <p><small class="text-muted"></small></p>
+        </div>
+        <div class="timeline-body">
+          <p>Unfortunately, there was an error loading posts from Facebook.  See the console for more information.</p>
+        </div>
+      </div>
+    </li>
+    <!--<div class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">Error</h2>
+                    <p class="lead">Unfortunately, there was an error loading posts from Facebook.  See the console for more information.</p>
+                </div>
+            </div>
+        </div>
+    </div>-->
     </script>
 
     <script type="text/javascript">
         $( function() {
-            app();
+            app({
+                fb: {
+                    numberFbPosts: 5,
+                    fbPostContainer: $('.facebook-posts'),
+                    fbPostsTemp: Handlebars.compile( $('#template-post').html() ),
+                    fbErrorTemp: Handlebars.compile( $('#template-fb-load-error').html() )
+                }
+            });
         });
     </script>
 
