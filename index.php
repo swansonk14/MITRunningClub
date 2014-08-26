@@ -64,13 +64,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#">News</a>
+                        <a href="#news">News</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -115,7 +115,22 @@
 
     <div class="content-section-a">
         <div class="container">
-             <ul class="timeline facebook-posts">
+            <span class="link-loc" id="about"></span>
+            <div class="page-header">
+                <h1>About<small></small></h1>
+            </div>
+            <p>Come run with friends! MITRC meets every Monday at 5:30pm in the Z Center lobby.</p>
+            <p>Feel free to contact Katie Ellinger with any questions.</p>
+        </div>
+    </div>
+
+    <div class="content-section-b">
+        <div class="container">
+            <span class="link-loc" id="news"></span>
+            <div class="page-header">
+                <h1>News<small></small></h1>
+            </div>
+            <ul class="timeline facebook-posts">
                 <!--<li>
                   <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
                   <div class="timeline-panel">
@@ -412,6 +427,24 @@
 
     <script type="text/javascript">
         $( function() {
+            // Set up smooth scrolling (found at http://stackoverflow.com/questions/14804941/how-to-add-smooth-scrolling-to-bootstraps-scroll-spy-function)
+            $("a[href^='#']").on('click', function(e) {
+                // prevent default anchor click behavior
+                console.log( "here " );
+                e.preventDefault();
+                // store hash
+                var hash = this.hash;
+                // animate
+                $('html, body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 300, function(){
+                // when done, add hash to url
+                // (default click behaviour)
+                    window.location.hash = hash;
+                });
+            });
+
+            // Start app:
             app({
                 fb: {
                     numberFbPosts: 5,
