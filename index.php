@@ -385,18 +385,6 @@
       </div>
     </li>
 
-    <!--<div class="">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    {{{json this}}}
-                    <h2 class="section-heading">{{this.created_time}}</h2>
-                    <h3 class="section-subheading">{{this.from.name}}</h3>
-                    <p class="lead">{{this.message}}</p>
-                </div>
-            </div>
-        </div>
-    </div>-->
     {{/each}}
     </script>
 
@@ -413,16 +401,6 @@
         </div>
       </div>
     </li>
-    <!--<div class="">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="section-heading">Error</h2>
-                    <p class="lead">Unfortunately, there was an error loading posts from Facebook.  See the console for more information.</p>
-                </div>
-            </div>
-        </div>
-    </div>-->
     </script>
 
     <script type="text/javascript">
