@@ -61,6 +61,6 @@
 }
 
 .banner {
-	background: url(../img/mit.jpg) no-repeat center -700px;
+	background: url(../img/mit.jpg) no-repeat center center;
 	background-size: cover;
 }

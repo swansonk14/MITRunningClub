@@ -46,6 +46,7 @@
 </head>
 
 <body>
+    <span class="link-loc" id="home"></span>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -58,7 +59,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png"/>MIT Running Club</a>
+                <a class="navbar-brand" href="#home"><img class="logo" src="img/logo.png"/>MIT Running Club</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -120,7 +121,7 @@
                 <h1>About<small></small></h1>
             </div>
             <p>Come run with friends! MITRC meets every Monday at 5:30pm in the Z Center lobby.</p>
-            <p>Feel free to contact Katie Ellinger with any questions.</p>
+            <p>Feel free to contact <a href="mailto:ellinger@mit.edu?subject=MITRC">Katie Ellinger</a> with any questions.</p>
         </div>
     </div>
 
@@ -296,20 +297,19 @@
 
         <div class="container">
 
+            <span class="link-loc" id="contact"></span>
+
             <div class="row">
                 <div class="col-lg-6">
-                    <h2>Connect to Start Bootstrap:</h2>
+                    <h2>Contact us:</h2>
                 </div>
                 <div class="col-lg-6">
                     <ul class="list-inline banner-social-buttons">
                         <li>
-                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                            <a href="https://www.facebook.com/groups/615937005130415/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
                         </li>
                         <li>
-                            <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                            <a href="mailto:ellinger@mit.edu?subject=MITRC" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Email</span></a>
                         </li>
                     </ul>
                 </div>
@@ -336,14 +336,14 @@
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#services">Services</a>
+                            <a href="#news">News</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
                             <a href="#contact">Contact</a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
+                    <!--<p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>-->
                 </div>
             </div>
         </div>
