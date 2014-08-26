@@ -59,3 +59,8 @@
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 }
+
+.banner {
+	background: url(../img/mit.jpg) no-repeat center -700px;
+	background-size: cover;
+}
