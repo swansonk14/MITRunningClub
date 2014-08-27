@@ -1,5 +1,7 @@
 <?php
 
+define( "USE_GOOG_ANALYTICS", false ); // Only true for production server
+
 define( "FACEBOOK_SDK_LOCATION", __DIR__ . "/libs/facebook-php-sdk-v4-4.0-dev/autoload.php" );
 define( "FACEBOOK_APP_ID", "YOUR APP ID" );
 define( "FACEBOOK_APP_SECRET", "YOUR APP CERTIFICATE" );
