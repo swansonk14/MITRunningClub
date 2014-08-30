@@ -80,7 +80,7 @@
 			return context;
 		}
 		var hourOffset = parseInt( res[7], 10 ) - 4;
-		var dt = new Date( parseInt(res[1], 10), parseInt(res[2], 10), parseInt(res[3], 10), parseInt(res[4], 10) + hourOffset, parseInt(res[5], 10), parseInt(res[6], 10) );
+		var dt = new Date( parseInt(res[1], 10), parseInt(res[2], 10) - 1, parseInt(res[3], 10), parseInt(res[4], 10) + hourOffset, parseInt(res[5], 10), parseInt(res[6], 10) );
 		var thisYear = ( new Date() ).getYear();
 		var hours = dt.getHours();
 		var am = hours < 12;
