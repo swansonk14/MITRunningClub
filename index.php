@@ -137,8 +137,9 @@
             <div class="page-header">
                 <h1>About<small></small></h1>
             </div>
-            <p>Come run with friends! MITRC meets every Monday at 5:30pm in the Z Center lobby.</p>
-            <p>Feel free to contact <a href="mailto:ellinger@mit.edu?subject=MITRC">Katie Ellinger</a> with any questions.</p>
+            <p>MIT Running Club was founded in the fall of 2013 to provide an outlet for amateur runners in the MIT community. Since officially being incorporated as an ASA group in February 2014, the club has quickly grown into a collection of run-loving students.</p>
+
+            <p>We welcome runners of all abilities, so whether you’re race-ready or more of a casual sidewalk strider, we’re happy to have your company. The club is open to all members of the community. Our goal is to provide regular training opportunities, socialization, encouragement, and practical advice. While formal membership is not required, we encourage runners to join our Facebook group to get club updates, training and nutritional tips, and other running-related news.</p>
         </div>
     </div>
 
