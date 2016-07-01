@@ -327,7 +327,7 @@
                             <a href="https://www.facebook.com/groups/615937005130415/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
                         </li>
                         <li>
-                            <a href="mailto:ellinger@mit.edu?subject=MITRC" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Email</span></a>
+                            <a href="mailto:mitrc-exec@mit.edu?subject=MITRC" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Email</span></a>
                         </li>
                     </ul>
                 </div>
