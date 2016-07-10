@@ -10,7 +10,7 @@
 		<?php
 		// include 'analytics.php';
 		include 'title.php';
-		include 'run_database.php'
+		//include 'run_database.php'
 		?>
 
 		<div class="runs">
