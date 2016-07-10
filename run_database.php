@@ -31,9 +31,9 @@ require('vendor/autoload.php');
 echo "test";
 $mongo_client = new MongoDB\Client('mongodb://MITRunningClub:werun26.2@ds040089.mlab.com:40089/mit_running_club');
 echo "test2";
-$runs = $mongo_client->MITRunningClub->runs;
+$runs = $mongo_client->mit_running_club->runs;
 $document = array('Distance' => 26);
-$runs->insertOne($document);
+$result = $runs->insertOne($document);
 $items = $runs->find();
 foreach ($items as $document) {
 	echo $document['Distance'];
