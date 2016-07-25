@@ -66,10 +66,27 @@
 }
 
 /* Runs page styles */
+.add-run {
+	margin-left: 10px;
+}
+
+.runs-title {
+	padding-top: 50px;
+	text-align: center;
+}
+
 .runs {
-	padding-top: 75px;
 	margin: auto;
 	width: 85%;
+}
+
+.run-distance {
+	display: inline;
+}
+
+.delete-run-button {
+	display: inline;
+	float: right;
 }
 
 .map-frame {
@@ -83,7 +100,10 @@
 	padding-right: 20px;
 }
 
-/* Add run page styles */
-.add-run {
-	padding-top: 75px;
+.success {
+	color: green;
+}
+
+.error {
+	color: red;
 }

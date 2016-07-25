@@ -25,14 +25,33 @@ function getRuns() {
 // Add a run with the given id to the database
 function addRun($runID) {
 	global $runs;
+
 	$run = array('runID' => $runID);
 	$runInDB = $runs->findOne($run);
 
 	if ($runInDB) {
-		echo "Run already in database";
+		http_response_code(400); // bad request
+		return "Run already in database";
 	} else {
 		$runs->insertOne($run);
-		echo "Run successfully inserted into database";
+		return "Run successfully inserted into database";
+	}
+}
+
+// Delete a run with the given id from the database
+function deleteRun($runID) {
+	global $runs;
+
+	$run = array('runID' => $runID);
+
+	// check if there are runs to delete
+	if ($runs->findOne($run)) {
+		// delete many just in case there are duplicates
+		$runs->deleteMany($run);
+		return "Run successfully removed";
+	} else {
+		http_response_code(400); // bad request
+		return "No run to remove";
 	}
 }
 ?>

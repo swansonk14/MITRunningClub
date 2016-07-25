@@ -18,9 +18,10 @@ $response = Requests::post($access_token_url, $access_token_headers, $access_tok
 $response = json_decode($response->body);
 $access_token = $response->access_token;
 
-// GET request to get route info from MapMyRun for the given route id
-function getRunInfo($runID) {
+// GET request to get route info from MapMyRun for the given run id
+function getInfo($runID) {
 	global $client_key, $access_token, $route_url, $route_headers;
+
 	$route_url = 'https://api.ua.com/v7.1/route/' . $runID . '/';
 	$route_headers = array('Api-Key' => $client_key,
 					 'authorization' => "Bearer $access_token");
@@ -30,8 +31,7 @@ function getRunInfo($runID) {
 	return $response;
 }
 
-// Get route info for all run ids provided
-function getRunInfos($runIDs) {
-	return array_map('getRunInfo', $runIDs);
+// Get route info for all the provided ids
+function getRunInfo($runIDs) {
+	return array_map('getInfo', $runIDs);
 }
-?>

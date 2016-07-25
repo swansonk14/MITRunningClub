@@ -26,9 +26,6 @@
                     <a href="runs.php">Runs</a>
                 </li>
                 <li>
-                    <a href="run_admin.php">Admin</a>
-                </li>
-                <li>
                     <a href="index.php#contact">Contact</a>
                 </li>
             </ul>
