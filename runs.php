@@ -8,7 +8,7 @@
 		<script src='runs.js'></script>
 	</head>
 
-	<body>
+	<body class='runs-body'>
 		<?php
 		// include 'analytics.php';
 		include 'title.php';
@@ -37,9 +37,9 @@
 		<h1 class="runs-title">MIT Running Club Run Library</h1>
 
 		<div class="add-run">
-			<h4 class="add-run-title">Add a run to the database</h4>
-			<p>Copy and paste the url of a <em>public</em> run from MapMyRun.com</p>
-			<form id="add-run-form">
+			<h4 class="add-run-title">Add a run to the library</h4>
+			<h5>Copy and paste the url of a <em>public</em> run from MapMyRun.com</h5>
+			<form id="add-run-form" class="add-run-form">
 				<input type="text" id="runURL" placeholder="Run url" />
 				<input type="submit" />
 			</form>
@@ -55,10 +55,11 @@
 				$distance = round($distance, 2);
 				$id = $run->_links->self[0]->id;
 				$mapUrl = "//snippets.mapmycdn.com/routes/view/embedded/" . $id . "?width=400&height=300&&line_color=E60f0bdb&rgbhex=DB0B0E&distance_markers=1&unit_type=imperial&map_mode=ROADMAP";
+				if ($distance && $id) {
 			?>
 				<div id=<?php echo "run-" . $id; ?> class="run-container">
 					<div class="run-info">
-						<h3 class="run-distance"><?php echo $distance; ?> miles</h3>
+						<h3 class="run-distance"><?php echo $distance; ?> mile run</h3>
 						<button id=<?php echo $id; ?> class="delete-run-button">Delete</button>
 					</div>
 					<div class="map">
@@ -66,6 +67,7 @@
 					</div>
 				</div>
 			<?php
+				}
 			}
 			?>
 		</div>

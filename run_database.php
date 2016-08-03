@@ -31,10 +31,10 @@ function addRun($runID) {
 
 	if ($runInDB) {
 		http_response_code(400); // bad request
-		return "Run already in database";
+		return "Run already in library";
 	} else {
 		$runs->insertOne($run);
-		return "Run successfully inserted into database";
+		return "Run successfully inserted into library";
 	}
 }
 

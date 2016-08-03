@@ -66,22 +66,48 @@
 }
 
 /* Runs page styles */
-.add-run {
-	margin-left: 10px;
+.runs-body {
+	background: url(../img/charles.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 .runs-title {
 	padding-top: 50px;
+	padding-bottom: 10px;
 	text-align: center;
+	color: white;
+}
+
+.add-run {
+	text-align: center;
+	color: white;
+}
+
+.add-run-form {
+	color: black;
 }
 
 .runs {
 	margin: auto;
-	width: 85%;
+	width: 70%;
+	margin-bottom: 15px;
+}
+
+.run-container {
+	padding-top: 20px;
+}
+
+.run-info {
+	background-color: #9BC2CF;
 }
 
 .run-distance {
 	display: inline;
+}
+
+.delete-run-message {
+	text-align: center;
 }
 
 .delete-run-button {
@@ -89,9 +115,14 @@
 	float: right;
 }
 
+.map {
+	overflow: hidden;
+}
+
 .map-frame {
 	height: 353px;
 	width: 100%;
+	margin-top: -53px;
 	border: none;
 }
 
@@ -101,7 +132,7 @@
 }
 
 .success {
-	color: green;
+	color: #7CFC00;
 }
 
 .error {

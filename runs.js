@@ -65,7 +65,7 @@ $(document).ready(function () {
 				} else if (xmlhttp.status === 400) {
 					spanClass = "error";
 				}
-				$("#run-" + runID).append("<span class='" + spanClass + "'>" + xmlhttp.responseText + "</span>");
+				$("#run-" + runID).append("<div class='delete-run-message'><span class='" + spanClass + "'>" + xmlhttp.responseText + "</span></div>");
 			}
 		}
 
